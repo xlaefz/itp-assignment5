@@ -1,0 +1,10 @@
+{{#each model as |subreddit|}}
+  <h4>{{subreddit.data.title}} </h4>
+  <p> Score: {{subreddit.data.score}} </p>
+			<p> Num Comments: {{subreddit.data.num_comments}} </p>
+			{{#if this.data.archived}}
+				<p> Archived </p>
+			{{else}}
+				<p> Not Archived </p>
+			{{/if}}
+{{/each}}

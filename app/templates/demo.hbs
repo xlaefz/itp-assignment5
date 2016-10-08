@@ -1,0 +1,13 @@
+<h2> Demo</h2>
+{{outlet}}
+
+{{input type="text" value=firstName}}
+
+Your name is {{firstName.length}} characters long.
+
+<br>
+{{#if firstName}}
+  <span>{{firstName}}</span>
+{{else}}
+  <p> No firstname entered </p>
+{{/if}}

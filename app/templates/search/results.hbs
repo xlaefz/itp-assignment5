@@ -1,0 +1,9 @@
+<h2> Results </h2>
+
+{{outlet}}
+
+<ul>
+  {{#each model.results as |results|}}
+    {{#song-item song=results}}{{/song-item}}
+  {{/each}}
+</ul>

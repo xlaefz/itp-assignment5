@@ -1,0 +1,14 @@
+<li>
+    <p> Title: {{song.title}} </p>
+    <p> Play Count: {{song.playCount}} </p>
+    {{#if isPopular}}
+      <img style = "width: 50px;"
+      src = "https://media3.giphy.com/media/10HEuppNDdGEVO/200_s.gif"
+       alt = "">
+     {{/if}}
+     {{#if isExpensive}}
+       <p> $ {{song.price}}</p>
+     {{else}}
+       <p> $$ {{song.price}} </p>
+     {{/if}}
+</li>

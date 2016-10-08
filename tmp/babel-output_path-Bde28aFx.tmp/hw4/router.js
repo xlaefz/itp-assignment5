@@ -6,7 +6,11 @@ define('hw4/router', ['exports', 'ember', 'hw4/config/environment'], function (e
   });
 
   Router.map(function () {
-    this.route('emberjson');
+    this.route('artists', function () {
+      this.route('singleArtist', { path: ':id' });
+    });
+    this.route('artist-item');
+    this.route('artistpage');
   });
 
   exports['default'] = Router;

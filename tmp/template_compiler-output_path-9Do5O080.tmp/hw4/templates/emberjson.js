@@ -106,7 +106,7 @@ export default Ember.HTMLBars.template((function() {
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createTextNode("  ");
         dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h4");
+        var el1 = dom.createElement("h3");
         var el2 = dom.createComment("");
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode(" ");

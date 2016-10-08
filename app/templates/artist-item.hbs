@@ -1,0 +1,16 @@
+<li>
+  {{song.title}}
+
+<br>
+{{#if isExpensive}}
+  $ {{song.price}}
+{{else}}
+  $$ {{song.price}}
+{{/if}}
+
+<br>
+Play Count: {{song.playCount}}
+{{#if isPopular}}
+  <img src="http://s.orzzzz.com/news/a6/0b/566a922047e87.jpg" alt="Kakkui" height="35" width="35">
+{{/if}}
+</li>
